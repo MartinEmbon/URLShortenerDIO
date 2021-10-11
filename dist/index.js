@@ -12,6 +12,8 @@ const urlController = new URLController_1.URLController();
 const database = new MongoConnection_1.MongoConnection();
 database.connect();
 var path = require('path');
+api.set("views", path.join(__dirname, "views"));
+api.set("view engine", "ejs");
 api.post('/shorten', urlController.shorten);
 api.get("/hash", urlController.redirect);
 api.get("/", urlController.home);

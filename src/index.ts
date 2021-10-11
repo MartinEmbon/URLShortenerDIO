@@ -10,6 +10,9 @@ const database = new MongoConnection()
 database.connect()
 var path = require('path');
 
+api.set( "views", path.join( __dirname, "views" ) );
+api.set( "view engine", "ejs" );
+
 //api.use(express.static(path.join(__dirname, 'public')));
 
 api.post('/shorten', urlController.shorten)
