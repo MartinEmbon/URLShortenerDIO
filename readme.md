@@ -1,3 +1,3 @@
-### URL shortener projeto Digital Innovation One
+# URL shortener projeto Digital Innovation One
 ## Eduzz Bootcampo
-# Typescript, Ejs, MongoDB
+### Typescript, Ejs, MongoDB
